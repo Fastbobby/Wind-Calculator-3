@@ -10,7 +10,11 @@
     "allowImportingTsExtensions": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+
+    /* Emit settings */
+    "composite": true,         // Required for project references
+    "noEmit": false,           // Allow emitting compiled files
+    "outDir": "./dist",        // Specify an output directory for compiled files
 
     /* Linting */
     "strict": true,
